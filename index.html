@@ -106,7 +106,8 @@
      function addToListElement () {
         const newName = document.getElementById("nameToAdd");
         if (!newName.value) {
-            alert("primero agrega un nombre burr@ xd")
+            alert("primero agrega un nombre burr@ xd");
+            return;
         }
         const div = document.createElement("div");
         div.classList.add("m-1")
