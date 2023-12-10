@@ -140,6 +140,10 @@
         return names;
       }
       function formarParejas(strings) {
+        for (let i = strings.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [strings[i], strings[j]] = [strings[j], strings[i]];
+      }
       const sobra = strings.length % 2 === 1 ? strings.pop() : null;
       const parejas = [];
 
